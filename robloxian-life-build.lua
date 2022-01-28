@@ -16,7 +16,7 @@ getgenv().building = false
 local count = 0
 
 
-local old_model = game:GetObjects(string.format('http://www.roblox.com/asset/?id=%s', tostring(model_id)))[1]
+local old_model = game:GetObjects(string.format('http://www.roblox.com/asset/?id=%s', tostring(getgenv().model_id)))[1]
 
 if old_model:IsA('BasePart') then
     local temp_model = Instance.new('Model', workspace)
