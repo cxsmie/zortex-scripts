@@ -1,7 +1,3 @@
-local model_id = 57729518
-
-getgenv().stop_command = 'stop' -- your stop command
-
 if getgenv().building == true then
     warn(string.format('already building, type %s%s%s in the chat to stop building.', "'", getgenv().stop_command, "'"))
     return
